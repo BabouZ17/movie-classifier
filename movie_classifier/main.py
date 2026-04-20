@@ -23,6 +23,6 @@ if __name__ == "__main__":
         model=config["gemini"]["model"],
     )
     # openai = OpenAIProvider(model=config["openai"]["model"])
-    classifier = Classifier(provider=gemini)
+    classifier = DefaultClassifier(provider=gemini)
     response = classifier.classify(args.summary)
     print(response)
