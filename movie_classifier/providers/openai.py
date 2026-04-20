@@ -7,9 +7,9 @@ class OpenAIProvider(Provider):
     def __init__(self, model: str):
         self.model = model
 
-        assert (
-            os.environ.get("OPENAI_API_KEY") is not None
-        ), "Please provide an OpenAI API Key."
+        assert os.environ.get("OPENAI_API_KEY") is not None, (
+            "Please provide an OpenAI API Key."
+        )
 
         self.client = OpenAI()
 

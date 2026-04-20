@@ -4,7 +4,7 @@ from movie_classifier.utils.load_config import load_config
 from movie_classifier.providers.gemini import GeminiProvider
 
 # from movie_classifier.providers.openai import OpenAIProvider
-from movie_classifier.classifiers.classifier import DefaultClassifier
+from movie_classifier.classifiers.default_classifier import DefaultClassifier
 from pathlib import Path
 
 
